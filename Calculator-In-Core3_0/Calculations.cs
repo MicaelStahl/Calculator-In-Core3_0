@@ -59,7 +59,7 @@ namespace Calculator_In_Core3_0
             }
             catch (Exception ex)
             {
-                display.DisplayMessage(ex.Message, ConsoleColor.Red);
+                display.DisplayMessage(ex.Message ?? "Something went wrong", ConsoleColor.Red);
                 throw;
             }
         }
